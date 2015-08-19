@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+        style="@style/ItemInnerLayout"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/message_user_avatar"
+            android:src="@drawable/icon_user"
+            android:minHeight="48dp"
+            android:maxHeight="48dp"
+            android:scaleType="fitCenter"
+            android:minWidth="48dp"
+            android:maxWidth="48dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="6dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_user"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/message_user_avatar"
+            android:layout_toRightOf="@+id/message_user_avatar"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尹捷"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:id="@+id/message_item_username"
+                />
+
+            <TextView
+                android:id="@+id/message_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2015-04-05"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_subject"
+            android:layout_below="@+id/message_user"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/message_user_avatar"
+            android:layout_toRightOf="@+id/message_user_avatar"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是标题我是标题我是标题我是标题我是标题我是标题我是标题"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:textColor="@color/text_black"
+                android:id="@+id/message_item_subject"
+
+                />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right_arrow_grey"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

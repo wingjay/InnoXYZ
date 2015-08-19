@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+        style="@style/ItemInnerLayout"
+        >
+
+        <ImageView
+            android:id="@+id/document_icon"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="5sp"
+            android:src="@drawable/attachment_icon"
+            />
+        <TextView
+            android:id="@+id/attachment_name_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_toRightOf="@+id/document_icon"
+            android:layout_toEndOf="@+id/document_icon"
+            android:layout_centerVertical="true"
+            android:text="@string/reply_attachment_name"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            />
+
+
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/delete_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dip"
+                android:background="@drawable/icon_delete"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

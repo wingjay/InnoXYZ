@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+    <com.innoxyz.ui.customviews.AutomaticWarpViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:id="@+id/new_message_checked_receivers">
+
+    </com.innoxyz.ui.customviews.AutomaticWarpViewGroup>
+
+    <AutoCompleteTextView
+        style="@style/EditTextStyle"
+        android:id="@+id/new_message_receiver"
+        />
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/new_message_subject"
+        />
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:inputType="textMultiLine"
+        android:ems = "10"
+        android:lines="10"
+        android:id="@+id/new_message_content"
+        />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:id="@+id/people_griditem_avatar"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_user"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    <ImageView
+            android:layout_width="@dimen/item_checked_image_size"
+            android:layout_height="@dimen/item_checked_image_size"
+            android:id="@+id/people_griditem_checked"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentRight="false"
+            android:src="@drawable/icon_warn"
+            android:scaleType="fitCenter"
+            android:layout_alignRight="@+id/people_griditem_avatar"
+            android:layout_marginRight="-8dp"
+            android:layout_alignTop="@+id/people_griditem_avatar"
+            android:layout_marginTop="-8dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:id="@+id/people_grid_item_name"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/people_griditem_avatar"
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>

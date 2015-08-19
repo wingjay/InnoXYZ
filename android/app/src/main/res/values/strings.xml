@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InnoXYZ</string>
+    <string name="welcome_to_innoxyz">欢迎来到InnoXYZ</string>
+    <string name="innoxyz_slogan">Innovating a Better Future</string>
+    <string name="TOPIC">TOPIC</string>
+    <string name="TASK">TASK</string>
+    <string name="ANNOUNCEMENT">ANNOUNCEMENT</string>
+    <string name="FILE">FILE</string>
+    <string name="DIR">DIR</string>
+    <string name="memu.tab.nofity">首页</string>
+    <string name="menu.actionbar.mail">New Mail</string>
+    <string name="menu.actionbar.user">用户</string>
+    <string name="menu.tab.todolist">待办</string>
+    <string name="menu.tab.projects">项目</string>
+    <string name="menu.tab.mails">邮件</string>
+    <string name="click_to_refresh">点击以刷新</string>
+    <string name="scrollup_to_load">-----继续上拉可以加载更多-----</string>
+    <string name="no_data_tip">没有更多信息</string>
+    <string name="no_local_document_tip">本地没有文件</string>
+    <string name="nothing">没有内容</string>
+    <string name="menu.projecthome.newtask">新建任务</string>
+    <string name="menu.projecthome.newdocument">新建文档</string>
+    <string name="menu.projecthome.newannouncement">新建通知</string>
+    <string name="menu.projecthome.newdiscussion">新建讨论</string>
+    <string name="menu.projecthome.tasklist">任务列表</string>
+    <string name="menu.projecthome.discussionlist">讨论列表</string>
+    <string name="menu.projecthome.documentlist">文档列表</string>
+    <string name="menu.projecthome.announcementlist">通知列表</string>
+    <string name="menu.projecthome.date">日程</string>
+    <string name="menu.userhome.profile">个人信息</string>
+    <string name="menu.userhome.document">个人文档</string>
+    <string name="menu.userhome.invite">邀请用户</string>
+    <string name="menu.userhome.calendar">个人日历</string>
+    <string name="menu.userhome.setting">设　置</string>
+    <string name="menu.userhome.changepass">修改密码</string>
+    <string name="menu.userhome.logout">退　出</string>
+    <string name="hint.list.nomore">没有更多信息了</string>
+    <string name="hint.list.loading">正在加载&#8230;</string>
+    <string name="notify.list.topic">讨 论</string>
+    <string name="notify.list.announcement">通 知</string>
+    <string name="notify.list.task">任 务</string>
+    <string name="notify.list.file">文 件</string>
+    <string name="notify.list.tutorial">指 南</string>
+    <string name="notify.list.topic.topic.new">发起了讨论</string>
+    <string name="notify.list.topic.reply.new">回复了讨论</string>
+    <string name="notify.list.topic.involved.new">将你加入讨论</string>
+    <string name="notify.list.task.task.new">分配了任务</string>
+    <string name="notify.list.task.task.pushstate">更新了任务状态</string>
+    <string name="notify.list.file.file.new">上传了文件</string>
+    <string name="notify.list.announcement.announce.new">发布了通知</string>
+    <string name="notify.list.tutorial.project">项目页面</string>
+    <string name="notify.list.tutorial.project_intro">在项目页面你可以查看所有项目</string>
+    <string name="notify.list.tutorial.setting">设置页面</string>
+    <string name="notify.list.tutorial.setting_intro">在用户页面你可以设置常用信息</string>
+    <string name="notify.list.tutorial.user">个人页面</string>
+    <string name="notify.list.tutorial.user_intro">在用户页面你可以查看个人信息、个人文档等</string>
+    <string name="notify.list.tutorial.welcome">欢迎页面</string>
+    <string name="notify.list.tutorial.welcome_intro">在这里你可以了解到android端更多信息</string>
+    <string name="notify.list.tutorial.mail">邮件页面</string>
+    <string name="notify.list.tutorial.mail_intro">在这里你可以查看所有往来邮件</string>
+    <string name="template.projectitem.updated">%time%</string>
+    <string name="template.taskitem.assignees">分配给：%assignees%</string>
+    <string name="template.taskitem.duedate">截止日期：%duedate%</string>
+    <string name="template.topicitem.updated" formatted="false">%user%于%date%最后回复了本帖</string>
+    <string name="template.from">来自：<b>%user%</b></string>
+    <string name="hint.topicitem.noreply">没有人回复</string>
+    <string name="template.topichome.projectname">所属项目：%name%</string>
+    <string name="template.topichome.username" formatted="false">%name%：</string>
+    <string name="template.topichome.attachments">附件：%attach%</string>
+    <string name="template.documentitem.create" formatted="false">%time%由%user%上传</string>
+    <string name="title.involved_member">Involved Member</string>
+    <string name="confirm">confirm</string>
+    <string name="namecardbox_emptyhint">Press to add some people</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing…</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="title_activity_detail">Detail</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="topic_new_topic">新建讨论</string>
+    <string name="topic_new_topic_name_hint">讨论名称</string>
+    <string name="topic_new_topic_members_hint">关联用户</string>
+    <string name="topic_new_topic_detail_hint">详细</string>
+    <string name="topic_new_success">添加成功，请在讨论列表中查看</string>
+    <string name="topic_new_fail">添加失败，请重试</string>
+    <string name="topic_home_subject">话题主题:</string>
+    <string name="topic_home_content">话题内容:</string>
+    <string name="topic_creator_name">创建者 :</string>
+    <string name="topic_reply_task">回复话题</string>
+
+    <string name="searching">搜索中&#8230;</string>
+    <string name="cancel">取消</string>
+
+    <string name="task_new_task">新建任务</string>
+    <string name="task_new_task_name_hint">任务名称</string>
+    <string name="task_new_task_assigned_members_hint">分配给</string>
+    <string name="task_new_task_connected_members_hint">关联用户</string>
+    <string name="task_new_task_detail_hint">详细</string>
+    <string name="task_new_success">添加成功，请在任务列表中查看</string>
+    <string name="task_new_fail">添加失败，请重试</string>
+    <string name="task_new_default_due_date">          </string>
+
+    <string name="task_reply_task">回复任务</string>
+    <string name="task_reply_success">回复成功</string>
+    <string name="task_reply_fail">回复失败，请重试</string>
+    <string name="reply_hint">请输入回复内容</string>
+    <string name="task_reply_upload_attachment">上传附件</string>
+    <string name="task_reply_state">状态</string>
+    <string name="reply_attachment_name">附件名称</string>
+    <string name="reply_delete_attachment">删除</string>
+
+    <string name="title_activity_file_chooser">选择文件</string>
+    <string name="fc_directory">[DIR]</string>
+    <string name="fc_file">[FILE]</string>
+    <string name="fc_type_directory">DIRECTORY</string>
+    <string name="fc_type_file">FILE</string>
+    <string name="fc_internal_storage">手机存储</string>
+    <string name="fc_external_storage">外部存储</string>
+    <string name="fc_read_only">(只读)</string>
+    <string name="fc_empty_directory">空目录</string>
+    <string name="fc_cancel">取消</string>
+    <string name="fc_confirm">确认</string>
+    <string name="fc_close">关闭</string>
+
+    <string name="add_involve_success">添加参与者成功</string>
+    <string name="add_involve_fail">添加参与者失败，请重试</string>
+    <string name="remove_involve_success">删除参与者成功</string>
+    <string name="remove_involve_fail">删除参与者失败，请重试</string>
+
+    <string name="message_new_message">新建邮件</string>
+    <string name="message_new_message_receiver_hint">收件人</string>
+    <string name="message_new_message_more_receiver_hint">可以继续输入更多收件人</string>
+    <string name="message_new_message_subject_hint">请输入主题</string>
+    <string name="message_new_message_content_hint">请填写内容</string>
+    <string name="message_new_success">发送成功</string>
+    <string name="message_new_fail">发送失败，请重试</string>
+    <string name="message_new_null_receiver">请从下拉框中选择收件人</string>
+
+    <string name="message_receiver_title">收件人：</string>
+    <string name="message_sender_title">发件人：</string>
+    <string name="message_subject">主    题：</string>
+    <string name="message_time">时    间：</string>
+
+    <string name="message_reply_prefix">回复：</string>
+
+    <string name="announcement_new_announcement">新建通知</string>
+    <string name="announcement_new_announcement_title_hint">请输入主题</string>
+    <string name="announcement_new_announcement_toUsers_hint">发送给（留空即发送给全部项目成员）</string>
+    <string name="announcement_new_announcement_content_hint">请填写内容</string>
+    <string name="announcement_new_send_to_regEmail">发送邮件到注册邮箱</string>
+    <string name="announcement_new_success">发布成功</string>
+    <string name="announcement_new_fail">发布失败，请重试</string>
+
+    <string name="announcement_new_warning">只有项目创建者可以发布通知</string>
+    <string name="topic_modify_involvers">只有讨论创建者可以修改参与者</string>
+    <string name="task_modify_involvers">只有任务创建者可以修改参与者</string>
+
+
+    <string name="notify_set_read_success">成功标记为已办理</string>
+    <string name="notify_set_unread_success">成功标记为未办理</string>
+    <string name="notify_set_read_fail">标记为已办失败，请重试</string>
+
+    <string name="title_project_home">项目主页</string>
+    <string name="title_message_home">邮件</string>
+    <string name="title_task_home">任务</string>
+    <string name="title_topic_home">讨论</string>
+    <string name="title_document_home">文件</string>
+    <string name="title_local_document">本地文档</string>
+    <string name="title_announcement_home">通知</string>
+    <string name="title_profile">个人信息</string>
+
+    <string name="title_task_list">任务列表</string>
+    <string name="title_topic_list">讨论列表</string>
+    <string name="title_announcement_list">通知列表</string>
+
+    <string name="title_nofity_undone">待办</string>
+    <string name="title_nofity_done">已办</string>
+
+    <string name="title_project_list_all">项目</string>
+    <string name="title_project_list_star">加星项目</string>
+
+    <string name="title_invite">邀请用户</string>
+
+    <string name="title_changepass">修改密码</string>
+
+    <string name="title_message_inbox">收件箱</string>
+    <string name="title_message_outbox">发件箱</string>
+    <string name="title_message_send">发邮件</string>
+
+    <string name="title_user_home">个人</string>
+    <string name="title_select_file_to_upload">选择文件（单选）</string>
+
+
+    <string name="done">完成</string>
+    <string name="add">添加</string>
+    <string name="reply">回复</string>
+
+    <string name="involved">参与者</string>
+
+    <string name="messagebox_switch">切换</string>
+
+    <string name="notify_switch">切换</string>
+
+    <string name="projectlist_allorstar">切换</string>
+    <string name="search_hint">请输入关键字过滤</string>
+
+    <string name="invite_name_hint">姓名</string>
+    <string name="invite_email_hint">电子邮件地址</string>
+    <string name="invite_detail_hint">想在邀请信内附加的文字</string>
+    <string name="invite_success">邀请成功</string>
+    <string name="invite_fail">邀请失败，请重试</string>
+
+    <string name="changepass_passwordold_hint">旧密码</string>
+    <string name="changepass_passwordnew_hint">新密码</string>
+    <string name="changepass_passwordagain_hint">重复新密码</string>
+
+    <string name="changepass_passwordagain_notequal">重复密码与新密码不一致</string>
+    <string name="changepass_passwordagain_notlongenough">请至少输入六个字符</string>
+
+    <string name="changepass_success">修改密码成功</string>
+    <string name="changepass_fail">修改密码失败，请重试</string>
+
+    <string name="OK">确定</string>
+    <string name="unassigned">未指定</string>
+    <string name="unknowned">未知</string>
+
+
+    <!--文件类型-->
+    <string name="application.x.rar">rar</string>
+    <string name="application.zip">zip</string>
+    <string name="text.plain">txt</string>
+    <string name="application.vnd.openxmlformats.officedocument.spreadsheetml.sheet">xlsx</string>
+    <string name="application.vnd.ms.excel">xls</string>
+    <string name="application.vnd.openxmlformats.officedocument.presentationml.presentation">pptx</string>
+    <string name="application.vnd.openxmlformats.officedocument.wordprocessingml.document">docx</string>
+    <string name="application.msword">doc</string>
+    <string name="application.wps.office.doc">doc</string>
+    <string name="application.pdf">pdf</string>
+    <string name="application.vnd.ms.powerpoint">ppt</string>
+    <string name="image.png">png</string>
+    <string name="image.jpeg">jpeg</string>
+    <string name="image.gif">gif</string>
+
+</resources>

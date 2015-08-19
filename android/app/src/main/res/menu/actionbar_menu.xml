@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu.actionbar.mail" android:icon="@drawable/icon_mail" android:title="@string/menu.actionbar.mail" android:showAsAction="always"/>
+    <item android:id="@+id/menu.actionbar.user" android:icon="@drawable/icon_user" android:title="@string/menu.actionbar.user" android:showAsAction="always"/>
+</menu>

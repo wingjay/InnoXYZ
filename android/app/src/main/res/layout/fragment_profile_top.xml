@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/general_background"
+        >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_user"
+            android:scaleType="fitCenter"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_avatar"
+            android:text="小明"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/profile_user_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_user_name"
+            android:text="上海交大"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/profile_user_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_user_from"
+            android:text="学生"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_detail"
+        android:layout_below="@+id/profile_avatar">
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/invite_name"
+        />
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/invite_email"
+        />
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:inputType="textMultiLine"
+        android:ems = "10"
+        android:lines="10"
+        android:gravity="top"
+        android:id="@+id/invite_detail"
+        />
+
+
+</LinearLayout>

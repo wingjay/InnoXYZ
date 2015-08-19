@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+
+    <TextView
+        android:id="@+id/temp_bendi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="本地"
+        android:textSize="18sp"
+        android:textColor="@color/text_black"
+        />
+
+    <TextView
+        android:id="@+id/temp_xiangji"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="相机"
+        android:textSize="18sp"
+        android:textColor="@color/text_black"
+        />
+
+
+</LinearLayout>

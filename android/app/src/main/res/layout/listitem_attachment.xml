@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AccachmentItemOuterLayout"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/attachment_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="2dp"
+        android:src="@drawable/attachment_icon"
+        android:gravity="start"
+        />
+    <TextView
+        android:id="@+id/attachment_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:overScrollMode="always"
+        android:maxWidth="250dp"
+        android:text=""
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/dark_gray"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <com.innoxyz.ui.customviews.FileDownloadImageView
+            android:id="@+id/download_attachment_state"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="2dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

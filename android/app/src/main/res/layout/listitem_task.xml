@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+        style="@style/ItemInnerLayout"
+        >
+
+
+        <TextView
+            android:id="@+id/task_item_name"
+            android:text="New Text2222222222222222222222222222222222222"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            style="@style/ItemName"/>
+
+        <TextView
+            android:id="@+id/task_item_assignee"
+            android:text="New Text111111111111111111111111111111"
+            android:layout_below="@+id/task_item_name"
+            android:textSize="12sp"
+            style="@style/ItemComment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_item_duedate"
+            android:singleLine="true"
+            android:text="NewText"
+            android:textSize="12sp"
+            android:layout_below="@+id/task_item_assignee"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/text_gray"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_item_status"
+            android:layout_alignParentLeft="false"
+            android:text="New Text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36dp"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/text_blue"
+            android:background="@drawable/border_blue"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="4dp"
+            android:password="false"/>
+
+        <ImageView
+            android:src="@drawable/right_arrow"
+            style="@style/ItemGotoIcon"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

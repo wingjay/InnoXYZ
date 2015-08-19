@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Add, should appear as action button -->
+    <item android:id="@+id/action_switch"
+        android:icon="@drawable/notify_unread"
+        android:title="@string/notify_switch"
+        android:showAsAction="always" />
+</menu>

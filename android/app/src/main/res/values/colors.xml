@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="android_blue">#1772c4</color>
+    <color name="android_light_blue">#33b5e5</color>
+    <color name="actionbar_blue">#1772c4</color>
+    <color name="none">#00000000</color>
+    <color name="border">#bbb</color>
+    <color name="background_lightgray">#ffeeeeee</color>
+    <color name="background_darkergray">#c9cacb</color>
+    <color name="background_dark">#777777</color>
+    <color name="background_black">#222222</color>
+    <color name="background_white">#fbfbfb</color>
+    <color name="line_background">#999999</color>
+    <color name="text_dark">#111111</color>
+    <color name="text_blue">#1772c4</color>
+    <color name="text_black">#000000</color>
+    <color name="text_gray">#999999</color>
+    <color name="dark_gray">#555555</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="text_white">#f6f6f6</color>
+    <color name="image_background_blue">#9fd0e3</color>
+    <color name="background_darkblue">#0C5D89</color>
+    <color name="background_selected_blue">#34a0c8</color>
+
+    <color name="general_background">#eeeeee</color>
+    <color name="item_background">#ffffff</color>
+    <color name="item_pressed_background">#eeeeee</color>
+    <color name="button_background">#1772c4</color>
+    <color name="button_pressed_background">#33b5e5</color>
+    <color name="notify_detail_title_background">#fffeee</color>
+    <color name="notify_detail_title_text_color">#000000</color>
+    <color name="notify_detail_footer_background">#1D95D4</color>
+    <color name="refresh_listview_background">#888888</color>
+    <color name="file_download_background">#fffeee</color>
+    <color name="file_download_pressed_background">#fdfacb</color>
+
+    <color name="innoxyz_green">#98d24d</color>
+    <color name="innoxyz_blue">#1772c4</color>
+    <color name="test_red">#ffc8000e</color>
+    <color name="test_yellow">#ffc8b800</color>
+</resources>

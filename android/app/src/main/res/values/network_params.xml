@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_connections_per_route">20</integer>
+    <integer name="timeout_waiting_connection">8000</integer>
+    <integer name="timeout_connecting">8000</integer>
+    <integer name="timeout_waiting_response">8000</integer>
+</resources>

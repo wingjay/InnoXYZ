@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/notify_detail_title_background"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_discusslist"
+                android:adjustViewBounds="true"
+                android:maxHeight="48dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:id="@+id/topichome_projectname"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/notify_detail_title_text_color"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/topichome_bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/notify_detail_footer_background"
+            android:id="@+id/topichome_bottom_button">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/topic_home_reply"
+                android:background="@drawable/button_background"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我来说两句"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:maxHeight="48dp"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/background_white"
+                android:layout_gravity="center_horizontal"
+                />
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/topic_home_goto_project"
+                android:background="@drawable/button_background"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前往所在项目"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/right_arrow_white"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="45dp"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.innoxyz.ui.customviews.RefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topic_reply_listview"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/topichome_bottom"/>
+
+
+
+
+
+
+</RelativeLayout>

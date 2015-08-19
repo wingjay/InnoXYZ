@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/announcement_home_attach_listview"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notify_detail_title_background"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_announcementlist"
+            android:adjustViewBounds="true"
+            android:maxHeight="48dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text222222222222222"
+            android:id="@+id/announcement_home_projectname"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/notify_detail_title_text_color"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/announcement_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New TexNew TexNew TexNew TexNew TexNew TexNew TexNew Text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/linearLayout"
+        android:textColor="@color/text_dark"/>
+
+    <TextView
+        android:id="@+id/announcement_release_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/announcement_title"
+        android:textColor="@color/text_blue"/>
+
+    <TextView
+        android:id="@+id/announcement_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-4-1"
+        android:textSize="15sp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/announcement_release_user"
+        android:textColor="@color/text_gray"/>
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/line_background"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/announcement_time"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/announcement_time"
+        android:layout_above="@+id/announcement_home_attach_listview"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/announcement_home_content"
+            android:textColor="@color/text_dark"
+            android:textIsSelectable="true"
+            android:textSize="17sp"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text"
+            />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

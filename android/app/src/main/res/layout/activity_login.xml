@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+    <!-- 登录中 -->
+    <LinearLayout android:id="@+id/login_status"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/rotate_progressbar_blue"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/login_status_message"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_progress_signing_in" />
+    </LinearLayout>
+
+    <!-- 登录表单 -->
+    <RelativeLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/general_background"
+        >
+
+        <RelativeLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/android_blue"
+            >
+
+            <RelativeLayout
+                android:id="@+id/logo_welcome_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/logo_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/innoxyz_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    />
+                <TextView
+                    android:id="@+id/logo_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_to_innoxyz"
+                    android:layout_below="@+id/logo_image"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/text_white"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/innoxyz_slogan"
+                    android:layout_below="@+id/logo_1"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/text_white"
+                    />
+            </RelativeLayout>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="128sp"
+                android:layout_height="128sp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/user_tab_icon"
+                android:background="@drawable/image_border"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="40dp"
+                android:padding="3dp"
+                android:visibility="gone"
+                />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_form_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GeneralSize"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/logo"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/GeneralSize"
+                >
+
+                <EditText
+                    android:id="@+id/email"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/text_black"
+                    android:paddingLeft="15sp"
+                    android:hint="@string/prompt_email"
+                    />
+
+                <Button
+                    android:id="@+id/clear_email"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/delete"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/GeneralSize"
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15sp"
+                    android:textColor="@color/text_black"
+                    />
+
+                <Button
+                    android:id="@+id/clear_pwd"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/delete"
+                    />
+
+            </FrameLayout>
+
+
+            <Button android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/GeneralSize"
+                android:background="@drawable/button_background"
+                android:text="@string/action_sign_in_login"
+                android:textColor="@color/text_white"
+                />
+
+            <Button
+                android:id="@+id/signin_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/GeneralSize"
+                android:background="@drawable/button_background"
+                android:text="@string/action_sign_in"
+                android:textColor="@color/text_white"
+                />
+            <Button
+                android:id="@+id/test_switch_user1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试用户1"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/test_switch_user2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="测试用户2"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="6dp"
+                android:background="@color/none"
+                android:paddingBottom="1dp"
+                android:clickable="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_background_gray"
+            android:clickable="false">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/projhome_button_textView"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="48dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:src="@drawable/icon_goto"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/projhome_button_imageView"
+                android:scaleType="fitEnd"
+                android:maxHeight="32dp"
+                android:maxWidth="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/projhome_button_imageView"
+                android:src="@drawable/icon_newdocument"
+                android:scaleType="fitCenter"
+                android:maxWidth="32dp"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:maxHeight="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="12dp"/>
+    </RelativeLayout>
+</RelativeLayout>

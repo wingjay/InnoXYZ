@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.innoxyz.ui.customviews.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="6dp"
+    android:paddingRight="8dp"
+    android:clickable="false"
+    android:id="@+id/listitem_involver_layout">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ItemInnerLayout"
+        android:focusable="false">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listitem_involver_avatar"
+            android:src="@drawable/icon_user"
+            android:minHeight="32dp"
+            android:scaleType="fitCenter"
+            android:minWidth="32dp"
+            android:padding="0dp"
+            android:layout_marginTop="1dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/listitem_involver_name"
+            android:layout_toRightOf="@+id/listitem_involver_avatar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:textColor="@color/text_dark"
+            android:focusable="false"/>
+
+        <com.innoxyz.ui.customviews.InertCheckBox
+            android:id="@+id/listitem_involver_itemCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="false" />
+
+
+    </RelativeLayout>
+</com.innoxyz.ui.customviews.CheckableRelativeLayout>

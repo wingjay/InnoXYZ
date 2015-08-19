@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- add user, should appear as action button -->
+    <item android:id="@+id/action_taskhome_adduser"
+        android:icon="@drawable/involved_user"
+        android:title="@string/involved"
+        android:showAsAction="always" />
+</menu>

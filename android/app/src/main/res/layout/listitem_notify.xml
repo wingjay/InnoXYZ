@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ItemOuterLayoutGreyBorder">
+
+    <RelativeLayout
+        style="@style/ItemInnerLayout"
+        android:id="@+id/notify_list_item"
+        >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:id="@+id/listnotify_button"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:minHeight="55dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/listnotify_button_imageView"
+                    android:src="@drawable/icon_discusslist"
+                    android:maxWidth="45dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="5dp"
+                    android:minWidth="40dp"
+                    />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="讨  论"
+                    android:id="@+id/listnotify_button_textView"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text_dark"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="3dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/listnotify_button"
+                android:layout_toRightOf="@+id/listnotify_button"
+                android:layout_toEndOf="@+id/listnotify_button"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/listnotify_text">
+
+                <TextView
+                    android:id="@+id/listnotify_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长很长"
+                    android:singleLine="true"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/background_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listnotify_projname"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray"
+                    android:layout_below="@+id/listnotify_item_name"
+                    android:layout_alignLeft="@+id/listnotify_item_name"
+                    android:layout_alignStart="@+id/listnotify_item_name"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:text="阳光照耀大地"/>
+
+                <LinearLayout
+                    android:id="@+id/listnotify_last_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/listnotify_projname"
+                    android:layout_alignLeft="@+id/listnotify_projname"
+                    android:layout_alignStart="@+id/listnotify_projname"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listnotify_last_update_username"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_black"
+                        android:text="ss"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listnotify_last_update_content"
+                        android:singleLine="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_gray"
+                        android:text="更新了本讨论更新了本讨论更新了本讨论更新了本讨论更新了本讨论更新了本讨论"
+                        />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listnotify_last_update_time"
+                    android:singleLine="true"
+                    android:textColor="@color/text_gray"
+                    android:layout_below="@id/listnotify_last_update"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="12sp"
+                    android:text="2013-11-20"/>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

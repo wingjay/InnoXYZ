@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/general_background"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/original_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_search"
+        android:focusableInTouchMode="true"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_search"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:text="搜索"
+                android:textSize="16sp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/icon_search"
+                android:layout_toEndOf="@+id/icon_search"
+                android:textColor="@color/text_gray" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/original_search_textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@null"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popup_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_search"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:id="@+id/icon_searching"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_search"
+                />
+            <EditText
+                android:id="@+id/popup_search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_search"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="16sp"
+                android:layout_marginRight="40dp"
+                android:hint="@string/searching"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textColor="@color/text_black" />
+            <TextView
+                android:id="@+id/popup_window_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/text_blue"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/cancel" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

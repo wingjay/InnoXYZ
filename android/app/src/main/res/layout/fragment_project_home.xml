@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+    <LinearLayout
+        android:id="@+id/project_home_create_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/create_new_task"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_lightgrey"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="55sp"
+                    android:src="@drawable/icon_tasklist"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/menu.projecthome.newtask"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_new_topic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_lightgrey"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="55sp"
+                    android:src="@drawable/icon_discusslist"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/menu.projecthome.newdiscussion"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_new_announcement"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_lightgrey"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="55sp"
+                    android:layout_height="55sp"
+                    android:src="@drawable/icon_announcementlist"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_black"
+                    android:text="@string/menu.projecthome.newannouncement"
+                    android:layout_marginTop="8dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/project_home_show_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/project_home_create_view"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/show_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            >
+            <ImageView
+                android:id="@+id/show_task_list_image"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/icon_tasklist"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu.projecthome.tasklist"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/show_task_list_image"
+                android:layout_toEndOf="@+id/show_task_list_image"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/right_arrow_grey"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitEnd"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_topic_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            >
+            <ImageView
+                android:id="@+id/show_topic_list_image"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/icon_discusslist"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu.projecthome.discussionlist"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/show_topic_list_image"
+                android:layout_toEndOf="@+id/show_topic_list_image"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/right_arrow_grey"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitEnd"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_announcement_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            >
+            <ImageView
+                android:id="@+id/show_announcement_list_image"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/icon_announcementlist"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu.projecthome.announcementlist"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/show_announcement_list_image"
+                android:layout_toEndOf="@+id/show_announcement_list_image"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/right_arrow_grey"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitEnd"
+                android:maxHeight="40dp"
+                android:maxWidth="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    style="@style/ItemOuterLayout">
+    <ListView
+        android:id="@+id/task_attach_list"
+        android:layout_below="@+id/task_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:id="@+id/task_content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemInnerLayout">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/taskhome_item_username"
+                android:singleLine="true"
+                style="@style/ItemName"
+                android:maxWidth="160dp"
+                android:layout_marginLeft="56dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-12"
+                android:id="@+id/taskhome_item_date"
+                android:singleLine="true"
+                style="@style/ItemComment"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:maxWidth="160dp"
+                android:layout_below="@+id/taskhome_item_content"
+                android:layout_marginBottom="0dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/taskhome_item_avatar"
+                android:src="@drawable/icon_user"
+                android:minHeight="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+                android:minWidth="48dp"
+                android:maxWidth="48dp"
+                android:padding="0dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="引 用"
+                android:textColor="@color/text_gray"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ItemContent"
+            android:text="123"
+            android:id="@+id/taskhome_item_content"
+            android:layout_below="@+id/taskhome_item_username"
+            android:layout_alignLeft="@+id/taskhome_item_username"
+            android:layout_alignStart="@+id/taskhome_item_username"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskhome_item_state"
+            android:text="New Text"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/text_blue"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态更改为："
+            android:textSize="12sp"
+            android:id="@+id/taskhome_item_stateTitle"
+            android:layout_toLeftOf="@+id/taskhome_item_state"
+            android:layout_alignTop="@+id/taskhome_item_state"
+            android:textColor="@color/text_gray"/>
+
+    </RelativeLayout>
+</RelativeLayout>

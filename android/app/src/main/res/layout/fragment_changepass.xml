@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/changepass_passwordOld"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/changepass_passwordNew"
+        android:inputType="textPassword"
+        />
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/changepass_passwordAgain"
+        android:inputType="textPassword"
+        />
+
+
+</LinearLayout>

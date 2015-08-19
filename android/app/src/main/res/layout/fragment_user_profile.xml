@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OuterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_scrollview"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/avatar"
+            android:src="@drawable/icon_user"
+            android:scaleType="fitCenter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border_image"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avatar"
+            android:text="小明"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/institution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:text="上海交通大学"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/institution"
+            android:text="学生"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="5dp"
+            />
+    </RelativeLayout>
+
+
+
+</ScrollView>

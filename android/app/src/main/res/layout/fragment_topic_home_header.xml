@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ItemOuterLayout"
+    android:id="@+id/topic_home_main">
+
+    <ListView
+        android:id="@+id/title_attachment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ItemInnerLayout">
+
+        <LinearLayout
+            android:id="@+id/topic_creator_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topic_creator_name"
+                android:id="@+id/topic_creator_name_title"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/topic_creator_name_value"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/topic_subject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_creator_name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topic_home_subject"
+                android:id="@+id/topic_home_subject"
+                style="@style/ItemName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/topic_subject"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topic_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topic_subject_title"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/topic_home_content"
+                android:id="@+id/topic_home_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/topic_content"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/topic_create_time"
+            android:singleLine="true"
+            android:textColor="@color/material_blue_grey_950"
+            android:layout_below="@id/topic_content_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp"
+            android:text="2013-11-20"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

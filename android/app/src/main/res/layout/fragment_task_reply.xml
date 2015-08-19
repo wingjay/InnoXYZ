@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_reply_state"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reply_task_state"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <EditText
+            android:id="@+id/quote_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:gravity="top"
+            android:padding="5dp"
+            android:textColor="@color/text_gray"
+            style="@style/GeneralSize"
+            android:background="@drawable/edittext_background"
+            android:visibility="gone"
+            android:editable="false"
+            />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:inputType="textMultiLine"
+            android:ems = "10"
+            android:lines="5"
+            android:id="@+id/reply_task_detail"
+            android:layout_below="@+id/quote_content"
+            />
+
+        <Button
+            android:id="@+id/upload_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/task_reply_upload_attachment"
+            android:textColor="#ffffff"
+            style="@style/GeneralSize"
+            android:background="@drawable/button_background"
+            android:layout_below="@+id/reply_task_detail"
+            />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/attachment_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

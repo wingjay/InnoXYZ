@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ItemOuterLayout"
+    android:id="@+id/task_home_main">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/ItemInnerLayout">
+
+        <LinearLayout
+            android:id="@+id/creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="创始人："
+                android:id="@+id/task_home_creatorNameTitle"
+                style="@style/ItemName"/>
+
+            <TextView
+                android:id="@+id/task_home_creatorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:maxWidth="200dp"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/assignees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/creator">
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="分配给："
+                android:id="@+id/task_home_assigneeTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/task_home_assignees"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/describle"
+            android:layout_below="@+id/assignees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="描　述："
+                android:id="@+id/task_home_descTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/task_home_desc"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/priority"
+            android:layout_below="@+id/describle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="优先级："
+                android:id="@+id/task_home_priorityTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/task_home_priority"
+                style="@style/ItemValue"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/modified_date"
+            android:layout_below="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/ItemName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="截止日期："
+                android:id="@+id/task_home_deadlineTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/task_home_deadline"
+                style="@style/ItemValue"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_home_state"
+            android:text="New Text"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="@color/text_blue"
+            android:background="@drawable/border_blue"
+            android:paddingLeft="12dp"
+            android:paddingTop="4dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

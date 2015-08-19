@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/actionbar_blue"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/app_splash"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="#ffffff"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation|scrolling"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_top"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/notify_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                >
+                
+                <ImageView
+                    android:id="@+id/notify_tab_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/notify_tab_icon_light"
+                    />
+                
+                <TextView
+                    android:id="@+id/notify_tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/memu.tab.nofity"
+                    android:textColor="@color/innoxyz_blue"
+                    android:layout_below="@+id/notify_tab_icon"
+                    android:textSize="14sp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/tab_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/notify_tab_icon"
+                    android:layout_toRightOf="@+id/notify_tab_icon"
+                    android:layout_toEndOf="@+id/notify_tab_icon"
+                    android:layout_marginLeft="-2dip"
+                    android:layout_marginStart="-2dip"
+                    >
+
+                    <ImageView
+                        android:id="@+id/unread_tag"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:contentDescription="未读消息数"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_badge" />
+
+                    <TextView
+                        android:id="@+id/unread_notifies_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_white"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:layout_centerInParent="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/project_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                >
+
+                <ImageView
+                    android:id="@+id/project_tab_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/project_tab_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/project_tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu.tab.projects"
+                    android:textColor="@color/text_gray"
+                    android:layout_below="@+id/project_tab_icon"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                >
+
+                <ImageView
+                    android:id="@+id/mail_tab_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/mail_tab_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/mail_tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu.tab.mails"
+                    android:textColor="@color/text_gray"
+                    android:layout_below="@+id/mail_tab_icon"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                >
+
+                <ImageView
+                    android:id="@+id/user_tab_icon"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/user_tab_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/user_tab_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/menu.actionbar.user"
+                    android:textColor="@color/text_gray"
+                    android:layout_below="@+id/user_tab_icon"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AccachmentItemOuterLayout"
+    android:background="@drawable/clickable_background_white">
+
+    <ImageView
+        android:id="@+id/attachment_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/document_dir_icon"
+        android:gravity="start"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/directory_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3sp"
+            android:layout_below="@+id/directory_name"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建者："
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/dir_creator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/background_black"
+                android:layout_marginRight="5sp"
+                android:textSize="12sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建时间："
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/dir_creat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/background_black"
+                android:layout_marginRight="5sp"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        >
+        <ImageView
+            android:id="@+id/enter_directory_state"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/right_arrow"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

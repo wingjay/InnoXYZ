@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OuterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/avatar"
+                android:src="@drawable/icon_user"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:background="@drawable/border_image"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatar"
+                android:text="小明"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/text_black"
+                android:layout_marginTop="5dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/info"
+            style="@style/UserHomeItemLayoutStyle"
+            >
+
+            <ImageView
+                style="@style/UserHomeItemImageStyle"
+                android:src="@drawable/icon_profile"
+                />
+
+            <TextView
+                style="@style/UserHomeItemTextStyle"
+                android:text="@string/menu.userhome.profile"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/invite"
+            style="@style/UserHomeItemLayoutStyle"
+            >
+
+            <ImageView
+                style="@style/UserHomeItemImageStyle"
+                android:src="@drawable/icon_invite"
+                />
+
+            <TextView
+                style="@style/UserHomeItemTextStyle"
+                android:text="@string/menu.userhome.invite"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting"
+            style="@style/UserHomeItemLayoutStyle"
+            >
+
+            <ImageView
+                style="@style/UserHomeItemImageStyle"
+                android:src="@drawable/icon_setting"
+                />
+
+            <TextView
+                style="@style/UserHomeItemTextStyle"
+                android:text="@string/menu.userhome.changepass"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/document"
+            style="@style/UserHomeItemLayoutStyle"
+            >
+
+            <ImageView
+                style="@style/UserHomeItemImageStyle"
+                android:src="@drawable/icon_documentlist_small"
+                />
+
+            <TextView
+                style="@style/UserHomeItemTextStyle"
+                android:text="@string/menu.userhome.document"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            style="@style/UserHomeItemLayoutStyle"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                style="@style/UserHomeItemImageStyle"
+                android:src="@drawable/icon_logout"
+                />
+
+            <TextView
+                style="@style/UserHomeItemTextStyle"
+                android:text="@string/menu.userhome.logout"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/general_background"
+    >
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/new_announcement_title"
+        />
+
+
+    <com.innoxyz.ui.customviews.MultiSelectSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_announcement_toUsers"
+        android:layout_gravity="center_horizontal" />
+
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/announcement_new_send_to_regEmail"
+        android:textColor="@color/text_black"
+        android:id="@+id/announcement_new_send_to_regEmail_checkBox" />
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:inputType="textMultiLine"
+        android:ems = "10"
+        android:lines="10"
+        android:gravity="top"
+        android:id="@+id/new_announcement_content"
+        />
+
+
+
+
+</LinearLayout>
